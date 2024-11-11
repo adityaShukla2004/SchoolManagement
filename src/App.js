@@ -15,8 +15,9 @@ function App() {
            <Routes>
              <Route path='/' Component={Home}/>
              <Route path='/login' Component={Login}/>
+             <Route path='/admin' Component={AdminDashboard}/>
            </Routes>
-            <AdminDashboard/>
+           
        </Router>
        
     </>

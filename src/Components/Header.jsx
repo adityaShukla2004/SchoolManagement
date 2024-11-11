@@ -8,11 +8,11 @@ import LogoutIcon from '@mui/icons-material/Logout';
 function Header() {
     return (
         <>
-            <div className='w-full h-[70px] bg-[#ccc6c6b3] flex justify-between'>
-                <div className='flex justify-center items-center'>
+            <div className='w-full h-[60px] bg-[#ccc6c6b3] flex justify-between'>
+                <div className=' ml-2 flex justify-center  items-center'>
                     <Stack direction="row" spacing={2}>
                        
-                        <Avatar sx={{ bgcolor: deepOrange[500] ,width:'60px',height:'60px' }}>N</Avatar>
+                        <Avatar sx={{ bgcolor: deepOrange[500] ,width:'50px',height:'50px' }}>s</Avatar>
                        
                     </Stack>
                     <h2 className='ml-1 text-xl text-[#eb3a3a] font-serif font-bold'>Manage School</h2>
