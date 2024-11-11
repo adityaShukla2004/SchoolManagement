@@ -5,22 +5,10 @@ import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
-import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
-import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
+
 
 function AdminDashboard() {
-    const [nav,setNav]= useState("20%")
-   const hun =()=>{
-
-        if(nav=="20%")
-        {   
-            setNav("5%")
-        }
-        else{
-            setNav("20%")
-        }
-        
-   }
+    
    
   return (
     <>
@@ -32,15 +20,11 @@ function AdminDashboard() {
 
         </div>
         <div className='flex w-full'>
-            <div style={{width:nav,}} className='h-screen bg-[#090d44dd]'>
-                 <p onClick={hun} className='text-2xl text-white relative top-0 right-0'>
-                    {
-                        nav=="5%"?<KeyboardArrowRightIcon  sx={{color:'white'}}/>:<KeyboardArrowLeftIcon/>
-                    }
-                 </p>
+            <div className='h-screen '>
+                
                 <Navbar/>  
             </div>
-            <div  className='w-full bg-[#b7ff00] h-screen'>
+            <div  className='w-full  h-screen'>
 
             </div>
         </div>

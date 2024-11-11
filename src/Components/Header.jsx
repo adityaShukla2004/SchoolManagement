@@ -8,7 +8,7 @@ import LogoutIcon from '@mui/icons-material/Logout';
 function Header() {
     return (
         <>
-            <div className='w-full h-[60px] bg-[#ccc6c6b3] flex justify-between'>
+            <div className='w-full h-[60px] bg-[#090d44dd] flex justify-between'>
                 <div className=' ml-2 flex justify-center  items-center'>
                     <Stack direction="row" spacing={2}>
                        
@@ -19,7 +19,7 @@ function Header() {
                 </div>
                 <div className='flex flex-col m-2 justify-center items-center'>
                        <LogoutIcon sx={{ font:'20px',color:'#eb3a3a'}}/>
-                       <h2 className='font-bold'>Logout</h2>
+                       <h2 className='font-bold text-white'>Logout</h2>
                 </div>
             </div>
         </>
