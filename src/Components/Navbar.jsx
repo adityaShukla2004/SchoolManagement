@@ -18,15 +18,15 @@ import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
 
 
 function Navbar() {
-    const [navAnimation,setNavAnimation]= useState("200px");
+    const [navAnimation,setNavAnimation]= useState("60px");
    const hun =()=>{
 
-        if(navAnimation=="200px")
+        if(navAnimation=="60px")
         {   
-            setNavAnimation("60px")
+            setNavAnimation("200px")
         }
         else{
-            setNavAnimation("200px")
+            setNavAnimation("60px")
         }
         
    }
@@ -38,26 +38,31 @@ function Navbar() {
     }, {
         name: 'Student',
         icon: <SchoolSharpIcon sx={{ color: ['white'] }} />,
-        link: '/students'
+        link: '/allstudent'
     },
     {
-        name: 'Student',
+        name: 'Teacher',
         icon: <AccountCircleIcon sx={{ color: ['white'] }} />,
         link: '/students'
     },
     {
-        name: 'Student',
-        icon: <HomeIcon sx={{ color: ['white'] }} />,
+        name: 'Exams',
+        icon: <FamilyRestroomSharpIcon sx={{ color: ['white'] }} />,
         link: '/students'
     },
     {
-        name: 'Student',
-        icon: <HomeIcon sx={{ color: ['white'] }} />,
+        name: 'Attendance',
+        icon: <BorderColorSharpIcon sx={{ color: ['white'] }} />,
         link: '/students'
     },
     {
-        name: 'Student',
-        icon: <HomeIcon sx={{ color: ['white'] }} />,
+        name: 'Notifications',
+        icon: <EditNotificationsSharpIcon sx={{ color: ['white'] }} />,
+        link: '/students'
+    },
+    {
+        name: 'Fees Collections',
+        icon: <PaymentsSharpIcon sx={{ color: ['white'] }} />,
         link: '/students'
     },
     {
@@ -71,7 +76,7 @@ function Navbar() {
 ]
     return (
         <>
-            <div style={{width:navAnimation}} className=' h-full w-[200px] bg-[#090d44dd] overflow-hidden'>
+            <div style={{width:navAnimation}} className=' h-full w-[200px] bg-[#090d44dd] overflow-hidden transition-all'>
 
                 <p onClick={hun} className='text-2xl text-white relative top-0 right-0'>
                     {
